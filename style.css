@@ -4,22 +4,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-y: hidden;
+}
+pre {
+    text-align: right;
 }
 
-div {
-    display: flex;
-    justify-content: center;
-    transform: translateY(-50%);
-}
-
-nav a > img {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.603);
-    margin-bottom: 20px;
-    width: 50px;
+pre > a > img {
     border-radius: 50%;
+    width: 50px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
 }
 
 a > img:hover {
-    transition: 0.5s all ease-in;
-    border: 1px solid white;
+    border: 2px solid white;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.541);
 }
+
+div {
+    text-align: center;
+    transform: translateY(-50%);
+}
+
